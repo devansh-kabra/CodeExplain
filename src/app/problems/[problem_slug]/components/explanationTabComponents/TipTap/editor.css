@@ -1,0 +1,42 @@
+
+
+.tiptap p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    @apply text-[#adb5bd] float-left h-0 pointer-events-none;
+}
+
+.tiptap ul {
+  @apply list-disc pl-5 ml-2;  /* bullets */
+}
+
+.tiptap ol {
+  @apply list-decimal pl-5 ml-2; /* numbers */
+}
+
+.tiptap li {
+  @apply mb-1; /* spacing between items */
+}
+
+.tiptap code {
+    @apply bg-[#232930] p-1 rounded
+}
+
+
+/**for menu bar**/
+.control-group {
+    @apply w-full p-2 ;
+}
+
+.button-group {
+    @apply flex justify-center items-center gap-2  flex-wrap;
+}
+
+.button-group > button {
+    @apply bg-[#2A3138] border border-[#3A424C] sm:hover:bg-[#343C45] sm:hover:text-white rounded-full text-[#E5EAF0] text-base px-3 py-3 font-mono;
+}
+
+
+.is-active {
+    @apply bg-[#3A82F6]! text-white! sm:hover:bg-[#2566E8]!
+}  
+

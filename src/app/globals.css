@@ -1,0 +1,40 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap");
+@import './problems/[problem_slug]/components/explanationTabComponents/TipTap/editor.css';
+@import "tailwindcss";
+@import 'tailwind-scrollbar-hide/v4';
+
+
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+} */
+
+@theme {
+    /**fonts**/
+    --font-poppins: "Poppins", sans-serif; 
+    --font-inter: "Inter", sans-serif;
+}
+
+.sr-only {
+  @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0
+}
+
+.dashboard_kpi_boxes {
+  @apply bg-[#222831] border border-[#2A3038] rounded-sm p-2 h-30 sm:h-auto sm:max-h-30;
+}
+
+.CircularProgressbar-text {
+  @apply font-inter text-lg text-[#3A82F6];
+}
+
+.topicwise_kpi {
+  @media (max-width: 350px) {
+      grid-template-columns: 1fr !important; 
+  }
+}
+
+.problem-navbar-button {
+  @apply font-inter text-xs sm:text-sm lg:text-base rounded bg-[#3A82F6] sm:hover:bg-[#5A9CFF] active:bg-[#5A9CFF] text-white text-center ;
+}
