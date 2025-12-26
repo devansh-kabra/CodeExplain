@@ -20,11 +20,13 @@ export const authOptions = {
     callbacks: {
         async signIn({user}) {
             if (!user) {
+                // console.log("user got undefined");
                 return false;
             }
             return true;
         },
         async redirect({url, baseUrl}) {
+            // console.log("redirect to: ", url);
             if (url?.startsWith("/") || url?.startsWith(baseUrl)) return url;
             return baseUrl;
         },

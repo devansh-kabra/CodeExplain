@@ -4,7 +4,7 @@ import Link from "next/link";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
-import { signOut, SessionProvider } from "next-auth/react";
+import { signOut } from "next-auth/react";
 
 
 function Navbar() {
